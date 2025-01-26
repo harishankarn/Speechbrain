@@ -8,7 +8,7 @@ audio = audiorecorder("Record")
 
 def convertspeechtotext():
     try:
-        # Load pretrained ASR model
+        # Load pretrained ASR mode
         asr_model = EncoderDecoderASR.from_hparams(
             source="speechbrain/asr-conformer-transformerlm-librispeech",
             savedir="pretrained_models/asr-transformer-transformerlm-librispeech"
